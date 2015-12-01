@@ -9,10 +9,10 @@
         <header><h1>Bem Vindo ao MovieFinder</h1>
         <h1>_______________________________________________________________________________</h1>
         <h2>Voce esta logado como: XXXXXX</h2></header>
-		<button style="height:50px;width:200px" onclick="location.href='buscaFilme.html'">BUSCAR POR FILMES</button>
+		<button style="height:50px;width:200px" onclick="location.href='buscaFilme.jsp'">BUSCAR POR FILMES</button>
 		<br>
 		<br>
-		<button style="height:50px;width:300px" onclick="location.href='pessoal.html'">EDITAR DADOS CADASTRAIS</button>
+		<button style="height:50px;width:300px" onclick="location.href='pessoal.jsp'">EDITAR DADOS CADASTRAIS</button>
 		<br>
 		<br>
 		<a href="http://www.google.com/">Manual do Usuario - em PDF</a>
@@ -20,7 +20,7 @@
 		<br>
 		<br>
 		<br>
-		<button style="height:30px;width:100px" onclick="location.href='index.html'">DESLOGAR</button>
+		<button style="height:30px;width:100px" onclick="location.href='index.jsp'">DESLOGAR</button>
     </center>
     </body>
 </html>

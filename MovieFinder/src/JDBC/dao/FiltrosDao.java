@@ -1,14 +1,24 @@
+package JDBC.dao;
 import java.util.List;
+
+import JDBC.ConnectionFactory;
+import JDBC.modelo.Filme;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-public class filtrosDAO {
+public class FiltrosDao {
 	private Connection connection;
-	public filtrosDAO() {
+	
+	public FiltrosDao() {
 		this.connection = new ConnectionFactory().getConnection();
+	}
+	
+	public Connection getConnection() {
+		return connection;
 	}
 
 	public List<String> getGenero () {
@@ -118,7 +128,7 @@ public class filtrosDAO {
 	
 	}
 	
-	public List<Filme> filtraNacionalidade(String nomePais) {
+	public List<Filme> filtraPais(String nomePais) {
 		try {
 			List<Filme> filmes = new ArrayList<Filme>();
 			PreparedStatement stmt = this.connection.prepareStatement (
